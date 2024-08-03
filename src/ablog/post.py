@@ -433,6 +433,49 @@ def process_posts(app, doctree):
             coll = blog.archive[postinfo["date"].year]  # NOQA
 
 
+def add_meta_info(post, par, app, docname):
+    # Add meta information
+    meta_par = nodes.paragraph()   
+    meta_par.attributes["classes"].append("ablog-post-metainfo")       
+    # Date
+    date_item = post.date
+    if date_item:
+        icon_node = nodes.inline()
+        icon_node.attributes["classes"].append("fas fa-calendar fa-sm")
+        meta_par.append(icon_node)
+        meta_par.append(nodes.Text(" "))
+        meta_par.append(nodes.Text(date_item.strftime("%B %d, %Y")))
+    _dot = nodes.literal(text=" · ")
+    _dot.attributes["classes"] = ["ablog-dot"]
+    meta_par.append(_dot)    # Tags
+    tag_items = getattr(post, 'tags')
+    if tag_items:
+        for i, tag_item in enumerate(tag_items):
+            ref = _missing_reference(app, tag_item.xref, docname)
+            icon_node = nodes.inline()
+            icon_node.attributes["classes"].append("fas fa-hashtag fa-sm")
+            meta_par.append(icon_node)
+            meta_par.append(nodes.Text(" "))
+            meta_par.append(ref)
+            if i < len(tag_items):
+                meta_par.append(nodes.Text(" "))
+    # Category
+    category_item = getattr(post, 'category')
+    if category_item:
+        _dot = nodes.literal(text=" · ")
+        _dot.attributes["classes"] = ["ablog-dot"]
+        meta_par.append(_dot)
+        
+        category_item = category_item[0]
+        ref = _missing_reference(app, category_item.xref, docname)
+        icon_node = nodes.inline()
+        icon_node.attributes["classes"].append("fas fa-tag fa-sm")
+        meta_par.append(icon_node)
+        meta_par.append(nodes.Text(" "))
+        meta_par.append(ref)
+    par.append(meta_par)
+    
+
 def process_postlist(app, doctree, docname):
     """
     Replace `PostList` nodes with lists of posts.
@@ -469,10 +512,10 @@ def process_postlist(app, doctree, docname):
         date_format = node.attributes["date"] or _(blog.post_date_format_short)
         bl = nodes.bullet_list()
         bl.attributes["classes"].append("postlist-style-" + node["list-style"])
-        bl.attributes["classes"].append("postlist")
         for post in posts:
             bli = nodes.list_item()
             bli.attributes["classes"].append("ablog-post")
+            bli.attributes["data-marker"] = "*"
             bl.append(bli)
             par = nodes.paragraph()
             bli.append(par)
@@ -509,6 +552,9 @@ def process_postlist(app, doctree, docname):
                         par.append(ref)
                         if i < len(items):
                             par.append(nodes.Text(", "))
+            
+            add_meta_info(post, par, app, docname)                  
+
             if excerpts and post.excerpt:
                 for enode in post.excerpt:
                     enode = enode.deepcopy()

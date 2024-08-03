@@ -125,7 +125,7 @@
     </span>
   {% for coll in post.tags %}
   {% if coll|length %}
-  <a href="{{ pathto(coll.docname) }}">{{ coll }}</a>
+  <a href="{{ pathto(coll.docname) }}">{{ coll }}</a>{% if not loop.last %} &middot; {% endif %}
   {% if loop.index < post.tags|length %}
   {% endif %}
   {% else %}

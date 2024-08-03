@@ -1,0 +1,29 @@
+<p class="ablog-post-metainfo">
+    {% if ablog[pagename].date %} 
+    <i class="fas fa-calendar fa-sm"></i> {{ ablog[pagename].date.strftime("%B %d, %Y") }}
+    {% endif %}
+    <!-- {% if ablog[pagename].author %}by {{ ablog[pagename].author }}{% endif %} -->
+
+    {% if ablog[pagename].tags %}
+    &nbsp; &middot; &nbsp;
+    {% for tag in ablog[pagename].tags %}
+        {% if tag %}
+            <a class="reference internal" href="{{ pathto(tag.docname) }}"><i class="fas fa-hashtag fa-sm"></i>
+                {{ tag }}</a> 
+            {% if not loop.last %} &nbsp; {% endif %}
+        {% endif %}
+    {% endfor %}
+    {% endif %}
+
+    {% if ablog[pagename].category %}
+    &nbsp; &middot; &nbsp;
+    {% for cat in ablog[pagename].category %}
+        {% if cat %}
+            <a class="reference internal" href="{{ pathto(cat.docname) }}"><i class="fas fa-tag fa-sm"></i>
+                {{ cat }}</a> 
+            {% if not loop.last %} &nbsp; {% endif %}
+        {% endif %}
+    {% endfor %}
+    {% endif %}
+</p>
+
