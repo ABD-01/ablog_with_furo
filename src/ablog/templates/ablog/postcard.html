@@ -2,7 +2,7 @@
 <div class="ablog-sidebar-item ablog__postcard">
 {% set fa = ablog.fontawesome %}
 {% set post = ablog[pagename] %}
-<h2>
+<h3>
   {% if post.published %}
   {% if fa %}
   <i class="fa fa-calendar"></i>
@@ -18,7 +18,7 @@
   <span>Draft</span>
   {% endif %}
   {% endif %}
-</h2>
+</h3>
 <ul>
   {% include "ablog/postcard2.html" %}
 </ul>
