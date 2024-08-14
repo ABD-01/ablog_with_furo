@@ -5,7 +5,7 @@
 <ul class="ablog-cloud">
   {% for coll in ablog.tags %}
   {% if coll %}
-  <li class="ablog-cloud ablog-cloud-{{ coll.relsize(5, 1) }}">
+  <li class="ablog-cloud ablog-cloud-{{ coll.relsize(5, 1) }}" {% if loop.last %} style="float: none;padding-bottom: 2em;"{% endif %}>
     <a href="{{ pathto(coll.docname) }}">{{ coll }}</a>
   </li>
   {% endif %}
