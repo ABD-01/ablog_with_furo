@@ -1,4 +1,5 @@
 extensions = ["ablog"]
+html_theme = "furo"
 
 # Enable Atom feed generation
 blog_baseurl = "https://blog.example.com/"

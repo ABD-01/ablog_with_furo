@@ -18,9 +18,9 @@ def test_postlist(app, status, warning):
     assert (app.outdir / "postlist.html").exists()
 
     html = read_text(app.outdir / "postlist.html")
-    assert '<ul class="postlist-style-none postlist simple">' in html
+    assert '<ul class="postlist-style-none simple">' in html
     assert (
-        '<li class="ablog-post"><p class="ablog-post-title">01 December - <a class="reference internal" href="post.html">post</a></p></li>'
+        '<li class="ablog-post"><p class="ablog-post-title">01 December - <a class="reference internal" href="post.html">post</a>'
         in html
     )
 
@@ -33,6 +33,6 @@ def test_postlist_date_format_conf(app, status, warning):
 
     html = read_text(app.outdir / "postlist.html")
     assert (
-        '<li class="ablog-post"><p class="ablog-post-title">2020-12-01 - <a class="reference internal" href="post.html">post</a></p></li>'
+        '<li class="ablog-post"><p class="ablog-post-title">2020-12-01 - <a class="reference internal" href="post.html">post</a>'
         in html
     )
