@@ -68,11 +68,20 @@ blog_feed_templates = {
 disqus_shortname = "https-ablog-readthedocs-io"
 disqus_pages = True
 fontawesome_link_cdn = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-html_style = "alabaster.css"
-html_theme = "alabaster"
+html_theme = "furo"
+html_static_path = ["_static"]
+html_css_files = [
+    'custom.css',
+]
 html_sidebars = {
     "**": [
-        "about.html",
+        # "about.html",
+        "furo/sidebar/brand.html",
+        "furo/sidebar/search.html",
+        "furo/sidebar/scroll-start.html",
+        "furo/sidebar/navigation.html",
+        "furo/sidebar/rtd-versions.html",
+
         "ablog/postcard.html",
         "ablog/recentposts.html",
         "ablog/tagcloud.html",
@@ -81,16 +90,20 @@ html_sidebars = {
         "ablog/authors.html",
         "ablog/languages.html",
         "ablog/locations.html",
-        "searchbox.html",
+        # "searchbox.html",
+
+        "furo/sidebar/ethical-ads.html",
+        "furo/sidebar/scroll-end.html",
+        "furo/sidebar/variant-selector.html",
     ]
 }
 html_theme_options = {
-    "travis_button": False,
-    "github_user": "sunpy",
-    "github_repo": "ablog",
-    "description": "ABlog for blogging with Sphinx",
-    "logo": "ablog.png",
+    "light_logo": "ablog-furo.png",
+    "dark_logo": "ablog-furo-inverted.png",
+    "light_css_variables" : {"color-brand-visited": "var(--color-brand-primary);"},
+    "dark_css_variables" : {"color-brand-visited": "var(--color-brand-primary);"},
 }
+html_title = "ABlog for blogging with Sphinx"
 intersphinx_mapping = {
     "python": ("https://docs.python.org/", None),
     "sphinx": ("https://www.sphinx-doc.org/en/master/", None),
@@ -135,6 +148,13 @@ def parse_event(env, sig, signode):
     signode += plist
     return name
 
+def add_marker_js(app):
+    app.add_js_file(
+        "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js",
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==",
+        crossorigin="anonymous",
+        referrerpolicy="no-referrer",)
+    app.add_js_file("marker.js")
 
 def setup(app):
     from sphinx.ext.autodoc import cut_lines
@@ -147,5 +167,6 @@ def setup(app):
         objname="configuration value",
         indextemplate="pair: %s; configuration value",
     )
+    app.connect("builder-inited", add_marker_js)
     fdesc = GroupedField("parameter", label="Parameters", names=["param"], can_collapse=True)
     app.add_object_type("event", "event", "pair: %s; event", parse_event, doc_field_types=[fdesc])

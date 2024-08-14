@@ -32,10 +32,6 @@ ABlog Commands
 
   See 'ablog <command> -h' for more information on a specific command.
 
-.. contents:: Here are all the things you can do:
-  :local:
-  :backlinks: top
-
 .. _start:
 
 Start a New Project

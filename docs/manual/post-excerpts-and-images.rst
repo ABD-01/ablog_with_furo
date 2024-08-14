@@ -38,7 +38,13 @@ Images
 
 Let's first include a local and a non-local image in this post.
 
-.. image:: /_static/ablog.png
+.. image:: /_static/ablog-furo.png
+   :class: only-light
+
+
+.. image:: /_static/ablog-furo-inverted.png
+   :class: only-dark
+
 .. image:: https://www.python.org/static/community_logos/python-logo.png
 
 To link the second one of these, we add ``:image: 2`` option in :rst:dir:`post` directive.
