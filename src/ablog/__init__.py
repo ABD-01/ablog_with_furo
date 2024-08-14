@@ -95,6 +95,9 @@ def config_inited(app, config):
     # Add ablog stylesheets to static_path.
     static_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "stylesheets"))
     app.config.html_static_path.append(static_path)
+    app.add_css_file("ablog/tagcloud.css")
+    if app.config.html_theme == "furo":
+        app.add_css_file("ablog/styles_for_furo.css")
 
 
 def builder_inited(app):

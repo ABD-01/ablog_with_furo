@@ -445,11 +445,11 @@ def add_meta_info(post, par, app, docname):
         meta_par.append(icon_node)
         meta_par.append(nodes.Text(" "))
         meta_par.append(nodes.Text(date_item.strftime("%B %d, %Y")))
-    _dot = nodes.literal(text=" · ")
-    _dot.attributes["classes"] = ["ablog-dot"]
-    meta_par.append(_dot)    # Tags
     tag_items = getattr(post, 'tags')
     if tag_items:
+        _dot = nodes.literal(text=" · ")
+        _dot.attributes["classes"] = ["ablog-dot"]
+        meta_par.append(_dot)    # Tags
         for i, tag_item in enumerate(tag_items):
             ref = _missing_reference(app, tag_item.xref, docname)
             icon_node = nodes.inline()
