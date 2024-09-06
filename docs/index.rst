@@ -101,4 +101,3 @@ For ABlog documentation, this converts to the following where you can find more 
    :hidden:
    :glob:
 
-   */*
