@@ -1,24 +1,10 @@
-ABlog for Sphinx
-================
+Ablog with Furo
+===============
 
-|Build Status|
+See the discussion `here`_ for more infomation about this fork.
 
-.. |Build Status| image:: https://dev.azure.com/sunpy/ablog/_apis/build/status/sunpy.ablog?repoName=sunpy%2Fablog&branchName=main
-   :target: https://dev.azure.com/sunpy/ablog/_build/latest?definitionId=17&repoName=sunpy%2Fablog&branchName=main
+See `Ablog`_ for original readme.
 
-ABlog is a Sphinx extension that converts any documentation or personal website project into a full-fledged blog
+.. _here: https://github.com/sunpy/ablog/issues/108#issuecomment-2333336939
+.. _Ablog: https://github.com/sunpy/ablog
 
-`Please check our documentation for information on how to get started. <https://ablog.readthedocs.io/>`__
-
-Note
-----
-
-This is the new home of `Ahmet Bakan's Ablog Sphinx extension <https://github.com/abakan-zz/ablog/>`__.
-The original project is no longer maintained and the `SunPy Project <https://www.sunpy.org>`__ has taken over maintenance.
-
-Warning
--------
-
-**This version is maintained with the aim to keep it working for SunPy Project website and thus new features or bugfixes are highly unlikely unless they directly impact.**
-
-**We strongly encourage users and interested in parties in submitting patches to ``ablog``.**
