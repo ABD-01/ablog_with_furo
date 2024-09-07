@@ -1,0 +1,27 @@
+UpdateDirective
+===============
+
+.. currentmodule:: ablog.post
+
+.. autoclass:: UpdateDirective
+   :show-inheritance:
+
+   .. rubric:: Attributes Summary
+
+   .. autosummary::
+
+      ~UpdateDirective.required_arguments
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~UpdateDirective.run
+
+   .. rubric:: Attributes Documentation
+
+   .. autoattribute:: required_arguments
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: run

@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://ablog.readthedocs.io/</id>
+  <title>ABlog - Posts tagged tips</title>
+  <updated>2024-09-07T09:57:22.985665+00:00</updated>
+  <link href="https://ablog.readthedocs.io/"/>
+  <link href="https://ablog.readthedocs.io/blog/tag/tips/social.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.io/" version="0.1.dev1+g64071ef">ABlog</generator>
+  <entry>
+    <id>https://ablog.readthedocs.io/manual/watch-yourself-blogging.html</id>
+    <title>Watch Yourself Blogging</title>
+    <updated>2015-04-19T00:00:00+00:00</updated>
+    <author>
+      <name>Ahmet Bakan</name>
+    </author>
+    <content type="html">Watch Yourself Blogging #commands #tips</content>
+    <link href="https://ablog.readthedocs.io/manual/watch-yourself-blogging.html"/>
+    <summary>Wouldn’t you like your blog being rebuilt and served to you automatically as you are blogging on a sunny Sunday afternoon?
+It’s now possible with the improved ablog serve command.</summary>
+    <category term="commands" label="commands"/>
+    <category term="tips" label="tips"/>
+    <published>2015-04-19T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://ablog.readthedocs.io/manual/ablog-quick-start.html</id>
+    <title>ABlog Quick Start</title>
+    <updated>2015-03-01T00:00:00+00:00</updated>
+    <author>
+      <name>Ahmet Bakan</name>
+    </author>
+    <content type="html">ABlog Quick Start #config #tips</content>
+    <link href="https://ablog.readthedocs.io/manual/ablog-quick-start.html"/>
+    <summary>This short walk through of blogging work flow assumes that you have already installed ABlog. If not, see installation guide.</summary>
+    <category term="config" label="config"/>
+    <category term="tips" label="tips"/>
+    <published>2015-03-01T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://ablog.readthedocs.io/release/ablog-v0.1-released.html</id>
+    <title>ABlog v0.1 released</title>
+    <updated>2014-05-14T00:00:00+00:00</updated>
+    <author>
+      <name>Ahmet Bakan</name>
+    </author>
+    <content type="html">ABlog v0.1 released #tips</content>
+    <link href="https://ablog.readthedocs.io/release/ablog-v0.1-released.html"/>
+    <summary>ABlog v0.1 is released.</summary>
+    <category term="tips" label="tips"/>
+    <published>2014-05-14T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://ablog.readthedocs.io/manual/cross-referencing-blog-pages.html</id>
+    <title>Cross-referencing Blog Pages</title>
+    <updated>2014-05-11T00:00:00+00:00</updated>
+    <author>
+      <name>Ahmet Bakan</name>
+    </author>
+    <content type="html">Cross-referencing Blog Pages #tips #Sphinx</content>
+    <link href="https://ablog.readthedocs.io/manual/cross-referencing-blog-pages.html"/>
+    <summary>ABlog creates references to all post and archive pages.
+Posts can be cross-referenced using the name of the file, or when the file is named index, the name of the folder that contains the file.</summary>
+    <category term="Sphinx" label="Sphinx"/>
+    <category term="tips" label="tips"/>
+    <published>2014-05-11T00:00:00+00:00</published>
+  </entry>
+</feed>

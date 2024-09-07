@@ -1,0 +1,6 @@
+ablog_main
+==========
+
+.. currentmodule:: ablog.commands
+
+.. autofunction:: ablog_main

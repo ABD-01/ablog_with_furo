@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://ablog.readthedocs.io/</id>
+  <title>ABlog - Posts tagged Sphinx</title>
+  <updated>2024-09-07T09:57:22.719838+00:00</updated>
+  <link href="https://ablog.readthedocs.io/"/>
+  <link href="https://ablog.readthedocs.io/blog/tag/sphinx/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.io/" version="0.1.dev1+g64071ef">ABlog</generator>
+  <entry>
+    <id>https://ablog.readthedocs.io/manual/cross-referencing-blog-pages.html</id>
+    <title>Cross-referencing Blog Pages</title>
+    <updated>2014-05-11T00:00:00+00:00</updated>
+    <author>
+      <name>Ahmet Bakan</name>
+    </author>
+    <content type="html">Cross-referencing Blog Pages #tips #Sphinx</content>
+    <link href="https://ablog.readthedocs.io/manual/cross-referencing-blog-pages.html"/>
+    <summary>ABlog creates references to all post and archive pages.
+Posts can be cross-referenced using the name of the file, or when the file is named index, the name of the folder that contains the file.</summary>
+    <category term="Sphinx" label="Sphinx"/>
+    <category term="tips" label="tips"/>
+    <published>2014-05-11T00:00:00+00:00</published>
+  </entry>
+</feed>

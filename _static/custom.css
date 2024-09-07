@@ -1,0 +1,26 @@
+.sidebar-brand-text {
+    font-size: inherit;
+}
+/* marker */
+
+/* + and - */
+[data-marker="+"] > span, [data-marker="-"] > span {
+    cursor: pointer;
+}
+[data-marker="+"] > .fa-li, [data-marker="-"] > .fa-li {
+    user-select: none;
+}
+[data-marker="+"] > .fa-li > .fa-plus-square, [data-marker="-"] > .fa-li > .fa-minus-square {
+    font-size: 80%;
+}
+
+/* + */
+[data-marker="+"] > ol, [data-marker="+"] > ul {
+    display: none;
+}
+
+/* * */
+[data-marker="*"] > .fa-li > .fa-square {
+    font-size: 50%;
+    vertical-align: 25%;
+}

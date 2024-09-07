@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://ablog.readthedocs.io/</id>
+  <title>ABlog - Posts from Denizli, Turkey</title>
+  <updated>2024-09-07T09:57:21.175856+00:00</updated>
+  <link href="https://ablog.readthedocs.io/"/>
+  <link href="https://ablog.readthedocs.io/blog/location/denizli-turkey/social.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.io/" version="0.1.dev1+g64071ef">ABlog</generator>
+  <entry>
+    <id>https://ablog.readthedocs.io/release/ablog-v0.7-released.html</id>
+    <title>ABlog v0.7 released</title>
+    <updated>2015-05-03T00:00:00+00:00</updated>
+    <author>
+      <name>Ahmet Bakan</name>
+    </author>
+    <content type="html">ABlog v0.7 released</content>
+    <link href="https://ablog.readthedocs.io/release/ablog-v0.7-released.html"/>
+    <summary>ABlog v0.7.0 is released to fix the long standing issue 1 related to
+pickling of Sphinx build environment on Read The Docs. Improvements
+also resolved issues with using LaTeX builder, improved cross-referencing
+for non-html builders.</summary>
+    <published>2015-05-03T00:00:00+00:00</published>
+  </entry>
+</feed>

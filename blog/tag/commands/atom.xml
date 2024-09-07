@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://ablog.readthedocs.io/</id>
+  <title>ABlog - Posts tagged commands</title>
+  <updated>2024-09-07T09:57:22.783276+00:00</updated>
+  <link href="https://ablog.readthedocs.io/"/>
+  <link href="https://ablog.readthedocs.io/blog/tag/commands/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.io/" version="0.1.dev1+g64071ef">ABlog</generator>
+  <entry>
+    <id>https://ablog.readthedocs.io/manual/watch-yourself-blogging.html</id>
+    <title>Watch Yourself Blogging</title>
+    <updated>2015-04-19T00:00:00+00:00</updated>
+    <author>
+      <name>Ahmet Bakan</name>
+    </author>
+    <content type="html">Watch Yourself Blogging #commands #tips</content>
+    <link href="https://ablog.readthedocs.io/manual/watch-yourself-blogging.html"/>
+    <summary>Wouldn’t you like your blog being rebuilt and served to you automatically as you are blogging on a sunny Sunday afternoon?
+It’s now possible with the improved ablog serve command.</summary>
+    <category term="commands" label="commands"/>
+    <category term="tips" label="tips"/>
+    <published>2015-04-19T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://ablog.readthedocs.io/manual/ablog-commands.html</id>
+    <title>ABlog Commands</title>
+    <updated>2015-04-07T00:00:00+00:00</updated>
+    <author>
+      <name>Mehmet Gerçeker</name>
+    </author>
+    <content type="html">ABlog Commands #config #commands</content>
+    <link href="https://ablog.readthedocs.io/manual/ablog-commands.html"/>
+    <summary>ablog commands are for streamlining blog operations, i.e. building, serving, and viewing blog pages, as well as starting a new blog:</summary>
+    <category term="commands" label="commands"/>
+    <category term="config" label="config"/>
+    <published>2015-03-01T00:00:00+00:00</published>
+  </entry>
+</feed>

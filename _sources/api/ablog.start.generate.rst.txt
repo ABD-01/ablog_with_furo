@@ -1,0 +1,6 @@
+generate
+========
+
+.. currentmodule:: ablog.start
+
+.. autofunction:: generate

@@ -1,0 +1,6 @@
+register_posts
+==============
+
+.. currentmodule:: ablog.post
+
+.. autofunction:: register_posts

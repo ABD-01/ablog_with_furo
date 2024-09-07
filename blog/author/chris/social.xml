@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://ablog.readthedocs.io/</id>
+  <title>ABlog - Posts by Chris</title>
+  <updated>2024-09-07T09:57:20.939872+00:00</updated>
+  <link href="https://ablog.readthedocs.io/"/>
+  <link href="https://ablog.readthedocs.io/blog/author/chris/social.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.io/" version="0.1.dev1+g64071ef">ABlog</generator>
+  <entry>
+    <id>https://ablog.readthedocs.io/manual/external-post.html</id>
+    <title>External post</title>
+    <updated>2021-09-01T00:00:00+00:00</updated>
+    <author>
+      <name>Chris</name>
+    </author>
+    <content type="html">External post</content>
+    <link href="https://ablog.readthedocs.io/manual/external-post.html"/>
+    <summary>This text will be in auto-generated post previews, but links to the post will direct to external_link.</summary>
+    <published>2021-09-01T00:00:00+00:00</published>
+  </entry>
+</feed>

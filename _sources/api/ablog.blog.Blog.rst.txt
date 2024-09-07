@@ -1,0 +1,33 @@
+Blog
+====
+
+.. currentmodule:: ablog.blog
+
+.. autoclass:: Blog
+   :show-inheritance:
+
+   .. rubric:: Attributes Summary
+
+   .. autosummary::
+
+      ~Blog.feed_path
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~Blog.page_id
+      ~Blog.page_url
+      ~Blog.recent
+      ~Blog.register
+
+   .. rubric:: Attributes Documentation
+
+   .. autoattribute:: feed_path
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: page_id
+   .. automethod:: page_url
+   .. automethod:: recent
+   .. automethod:: register

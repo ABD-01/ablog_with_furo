@@ -1,0 +1,19 @@
+BlogPageMixin
+=============
+
+.. currentmodule:: ablog.blog
+
+.. autoclass:: BlogPageMixin
+   :show-inheritance:
+
+   .. rubric:: Attributes Summary
+
+   .. autosummary::
+
+      ~BlogPageMixin.blog
+      ~BlogPageMixin.title
+
+   .. rubric:: Attributes Documentation
+
+   .. autoattribute:: blog
+   .. autoattribute:: title

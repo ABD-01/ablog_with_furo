@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://ablog.readthedocs.io/</id>
+  <title>ABlog - Posts tagged deploy</title>
+  <updated>2024-09-07T09:57:22.897563+00:00</updated>
+  <link href="https://ablog.readthedocs.io/"/>
+  <link href="https://ablog.readthedocs.io/blog/tag/deploy/social.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.io/" version="0.1.dev1+g64071ef">ABlog</generator>
+  <entry>
+    <id>https://ablog.readthedocs.io/manual/deploy-to-github-pages.html</id>
+    <title>Deploy to GitHub Pages</title>
+    <updated>2015-04-07T00:00:00+00:00</updated>
+    <author>
+      <name>Ahmet Bakan</name>
+    </author>
+    <content type="html">Deploy to GitHub Pages #deploy</content>
+    <link href="https://ablog.readthedocs.io/manual/deploy-to-github-pages.html"/>
+    <summary>If you are looking for a place to publish your blog, GitHub Pages might be the place for you.</summary>
+    <category term="deploy" label="deploy"/>
+    <published>2015-04-07T00:00:00+00:00</published>
+  </entry>
+</feed>

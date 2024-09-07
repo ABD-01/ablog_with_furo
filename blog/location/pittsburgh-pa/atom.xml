@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://ablog.readthedocs.io/</id>
+  <title>ABlog - Posts from Pittsburgh, PA</title>
+  <updated>2024-09-07T09:57:21.182532+00:00</updated>
+  <link href="https://ablog.readthedocs.io/"/>
+  <link href="https://ablog.readthedocs.io/blog/location/pittsburgh-pa/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.io/" version="0.1.dev1+g64071ef">ABlog</generator>
+  <entry>
+    <id>https://ablog.readthedocs.io/manual/post-excerpts-and-images.html</id>
+    <title>Post Excerpts and Images</title>
+    <updated>2014-05-12T00:00:00+00:00</updated>
+    <author>
+      <name>Ahmet Bakan</name>
+    </author>
+    <content type="html">Post Excerpts and Images #directive</content>
+    <link href="https://ablog.readthedocs.io/manual/post-excerpts-and-images.html"/>
+    <summary>This post describes how to choose an excerpt and an image image for a post to be displayed in archive pages.</summary>
+    <category term="directive" label="directive"/>
+    <published>2014-05-12T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://ablog.readthedocs.io/manual/cross-referencing-blog-pages.html</id>
+    <title>Cross-referencing Blog Pages</title>
+    <updated>2014-05-11T00:00:00+00:00</updated>
+    <author>
+      <name>Ahmet Bakan</name>
+    </author>
+    <content type="html">Cross-referencing Blog Pages #tips #Sphinx</content>
+    <link href="https://ablog.readthedocs.io/manual/cross-referencing-blog-pages.html"/>
+    <summary>ABlog creates references to all post and archive pages.
+Posts can be cross-referenced using the name of the file, or when the file is named index, the name of the folder that contains the file.</summary>
+    <category term="Sphinx" label="Sphinx"/>
+    <category term="tips" label="tips"/>
+    <published>2014-05-11T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://ablog.readthedocs.io/manual/ablog-configuration-options.html</id>
+    <title>ABlog Configuration Options</title>
+    <updated>2021-03-20T00:00:00+00:00</updated>
+    <author>
+      <name>Ahmet Bakan</name>
+    </author>
+    <content type="html">ABlog Configuration Options #config</content>
+    <link href="https://ablog.readthedocs.io/manual/ablog-configuration-options.html"/>
+    <summary>This post describes ABlog configuration options that go in Sphinx build configuration file.</summary>
+    <category term="config" label="config"/>
+    <published>2014-05-10T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://ablog.readthedocs.io/manual/posting-and-listing.html</id>
+    <title>Posting and Listing</title>
+    <updated>2021-05-25T00:00:00+00:00</updated>
+    <author>
+      <name>Ahmet Bakan</name>
+    </author>
+    <content type="html">Posting and Listing #directive</content>
+    <link href="https://ablog.readthedocs.io/manual/posting-and-listing.html"/>
+    <summary>This post describes post, update, and postlist directives.</summary>
+    <category term="directive" label="directive"/>
+    <published>2014-05-09T00:00:00+00:00</published>
+  </entry>
+</feed>

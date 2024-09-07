@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://ablog.readthedocs.io/</id>
+  <title>ABlog - Posted in 2019</title>
+  <updated>2024-09-07T09:57:22.340896+00:00</updated>
+  <link href="https://ablog.readthedocs.io/"/>
+  <link href="https://ablog.readthedocs.io/blog/2019/social.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.io/" version="0.1.dev1+g64071ef">ABlog</generator>
+  <entry>
+    <id>https://ablog.readthedocs.io/release/ablog-v0.10-released.html</id>
+    <title>ABlog v0.10 released</title>
+    <updated>2019-11-17T00:00:00+00:00</updated>
+    <author>
+      <name>Nabil Freij</name>
+    </author>
+    <content type="html">ABlog v0.10 released</content>
+    <link href="https://ablog.readthedocs.io/release/ablog-v0.10-released.html"/>
+    <summary>ABlog v0.10 is released with the main focus being to support the latest version of Sphinx as well as Python 3 only support.</summary>
+    <published>2019-11-17T00:00:00+00:00</published>
+  </entry>
+</feed>

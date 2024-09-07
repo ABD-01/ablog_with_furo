@@ -1,0 +1,1147 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="../">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /> 
+
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../blog/atom.xml"
+  title="ABlog"
+/>
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"/>
+
+
+    <link rel="shortcut icon" href="../_static/ablog.ico"/><!-- Generated with Sphinx 8.0.2 and Furo 2024.08.06 -->
+        <title>ABlog Configuration Options - ABlog for blogging with Sphinx</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=354aac6f" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=fd3f3429" />
+    <link rel="stylesheet" type="text/css" href="../_static/ablog/tagcloud.css?v=4271035a" />
+    <link rel="stylesheet" type="text/css" href="../_static/ablog/styles_for_furo.css?v=e882fc94" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=302659d7" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=290806cd" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --color-brand-visited: var(--color-brand-primary);;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-brand-visited: var(--color-brand-primary);;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-brand-visited: var(--color-brand-primary);;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">ABlog for blogging with Sphinx</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../_static/ablog-furo.png" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../_static/ablog-furo-inverted.png" alt="Dark Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">ABlog for blogging with Sphinx</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  
+</div>
+
+<div class="ablog-sidebar-item ablog__postcard">
+
+
+<h3>
+  
+  
+  <i class="fa fa-calendar"></i>
+  
+  <span>10 May 2014</span>
+  
+</h3>
+<ul>
+  <div class="ablog-sidebar-item ablog__postcard2">
+
+<li id="published">
+  <span>
+    
+    <i class="fa fa-fw fa-edit"></i>
+    
+    </span>
+  20 March 2021
+</li>
+
+
+<li id="ablog-sidebar-item author ablog__author">
+  <span>
+    
+    <i class="fa-fw fa fa-user"></i>
+    
+    </span>
+  
+  
+  <a href="../blog/author/ahmet-bakan.html">Ahmet Bakan</a>
+  
+  
+  
+</li>
+
+
+<li id="ablog-sidebar-item location ablog__location">
+  <span>
+    
+    <i class="fa-fw fa fa-location-arrow"></i>
+    
+    </span>
+  
+  
+  <a href="../blog/location/pittsburgh-pa.html">Pittsburgh, PA</a>
+  
+  
+  
+</li>
+
+
+<li id="ablog-sidebar-item language ablog__language">
+  <span>
+    
+    <i class="fa-fw fa fa-language"></i>
+    
+    </span>
+  
+  
+  <a href="../blog/language/english.html">English</a>
+  
+  
+  
+</li>
+
+
+<li id="ablog-sidebar-item category ablog__category">
+  <span>
+    
+    <i class="fa-fw fa fa-folder-open"></i>
+    
+    </span>
+  
+  
+  <a href="../blog/category/manual.html">Manual</a>
+  
+  
+  
+</li>
+
+
+<li id="ablog-sidebar-item tags ablog__tags">
+  <span>
+    
+    
+    <i class="fa-fw fa fa-tag"></i>
+    
+    </span>
+  
+  
+  <a href="../blog/tag/config.html">config</a>
+  
+  
+  
+</li>
+
+
+<li id="ablog-sidebar-item comments ablog__comments">
+  <script type="text/javascript">
+    var disqus_shortname = "https-ablog-readthedocs-io";
+
+    (function () {
+      var s = document.createElement("script");
+      s.async = true;
+      s.type = "text/javascript";
+      s.src = "//" + disqus_shortname + ".disqus.com/count.js";
+      (
+        document.getElementsByTagName("HEAD")[0] ||
+        document.getElementsByTagName("BODY")[0]
+      ).appendChild(s);
+    })();
+  </script>
+  
+  <i class="fa-fw fa fa-comments"></i>
+  
+  <a href="#disqus_thread" data-disqus-identifier="/manual/ablog-configuration-options/" >
+    
+  </a >
+</li>
+
+</div>
+</ul>
+</div>
+
+<div class="ablog-sidebar-item ablog__recentposts">
+<h3>
+  <a href="../blog.html">Recent Posts</a>
+</h3>
+<ul>
+  
+  
+  <li>
+    <a href="../release/ablog-v0.11-released.html">
+      23 March - ABlog v0.11 released
+    </a>
+  </li>
+  
+  <li>
+    <a href="external-post.html">
+      01 September - External post
+    </a>
+  </li>
+  
+  <li>
+    <a href="markdown.html">
+      10 October - Markdown Support
+    </a>
+  </li>
+  
+  <li>
+    <a href="../release/ablog-v0.10-released.html">
+      17 November - ABlog v0.10 released
+    </a>
+  </li>
+  
+  <li>
+    <a href="notebook_support.html">
+      27 October - Jupyter Notebook Posting
+    </a>
+  </li>
+  
+</ul>
+</div>
+
+<div class="ablog-sidebar-item ablog__tags">
+<link rel="stylesheet" href="../_static/ablog/tagcloud.css" type="text/css" />
+<h3><a href="../blog/tag.html">Tags</a></h3>
+<ul class="ablog-cloud">
+  
+  
+  <li class="ablog-cloud ablog-cloud-1" >
+    <a href="../blog/tag/sphinx.html">Sphinx</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1" >
+    <a href="../blog/tag/api.html">api</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-2" >
+    <a href="../blog/tag/commands.html">commands</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-3" >
+    <a href="../blog/tag/config.html">config</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1" >
+    <a href="../blog/tag/deploy.html">deploy</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-3" >
+    <a href="../blog/tag/directive.html">directive</a>
+  </li>
+  
+  
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1" >
+    <a href="../blog/tag/i18n.html">i18n</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1" >
+    <a href="../blog/tag/posting.html">posting</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-5"  style="float: none;padding-bottom: 2em;">
+    <a href="../blog/tag/tips.html">tips</a>
+  </li>
+  
+  
+</ul>
+</div>
+
+<div class="ablog-sidebar-item ablog__category">
+<h3>
+  <a href="../blog/category.html">Categories</a>
+</h3>
+<ul>
+  
+  
+  <li>
+    <a href="../blog/category/manual.html">Manual (14)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../blog/category/release.html">Release (10)</a>
+  </li>
+  
+  
+</ul>
+</div>
+
+<div class="ablog-sidebar-item ablog__archive">
+<h3>
+  <a href="../blog/archive.html">Archives</a>
+</h3>
+<ul>
+  
+  
+  <li>
+    <a href="../blog/2023.html">2023 (1)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../blog/2021.html">2021 (1)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../blog/2020.html">2020 (1)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../blog/2019.html">2019 (1)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../blog/2018.html">2018 (3)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../blog/2015.html">2015 (8)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../blog/2014.html">2014 (9)</a>
+  </li>
+  
+  
+</ul>
+</div>
+
+<div class="ablog-sidebar-item ablog__authors">
+<h3><a href="../blog/author.html">Authors</a></h3>
+<ul>
+   
+  <li>
+    <a href="../blog/author/ahmet-bakan.html">Ahmet Bakan (17)</a>
+  </li>
+    
+  <li>
+    <a href="../blog/author/chris.html">Chris (1)</a>
+  </li>
+    
+  <li>
+    <a href="../blog/author/luc-saffre.html">Luc Saffre (1)</a>
+  </li>
+    
+  <li>
+    <a href="../blog/author/mehmet-gerceker.html">Mehmet Gerçeker (3)</a>
+  </li>
+    
+  <li>
+    <a href="../blog/author/nabil-freij.html">Nabil Freij (6)</a>
+  </li>
+    
+  <li>
+    <a href="../blog/author/second-author.html">Second Author (1)</a>
+  </li>
+   
+</ul>
+</div>
+
+<div class="ablog-sidebar-item ablog__languages">
+<h3>
+  <a href="../blog/language.html">Languages</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../blog/language/chinese.html">Chinese (1)</a>
+  </li>
+    
+  <li>
+    <a href="../blog/language/english.html">English (1)</a>
+  </li>
+    
+  <li>
+    <a href="../blog/language/english.html">English (22)</a>
+  </li>
+       
+</ul>
+</div>
+
+<div class="ablog-sidebar-item ablog__locations">
+<h3>
+  <a href="../blog/location.html">Locations</a>
+</h3>
+<ul>
+  
+  
+  <li>
+    <a href="../blog/location/denizli-turkey.html">Denizli, Turkey (1)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../blog/location/pittsburgh-pa.html">Pittsburgh, PA (4)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../blog/location/sf.html">SF (11)</a>
+  </li>
+  
+  
+  
+  
+  
+  <li>
+    <a href="../blog/location/world.html">World (5)</a>
+  </li>
+  
+  
+</ul>
+</div>
+
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="../_sources/manual/ablog-configuration-options.rst.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          
+          
+          
+            
+            <h1>ABlog Configuration Options</h1>
+            <p class="ablog-post-metainfo">
+     
+    <i class="fas fa-calendar fa-sm"></i> May 10, 2014
+    
+    <!-- by [Ahmet Bakan <blog/author/ahmet-bakan>] -->
+
+    
+    &nbsp; &middot; &nbsp;
+    
+        
+            <a class="reference internal" href="../blog/tag/config.html"><i class="fas fa-hashtag fa-sm"></i>
+                config</a> 
+            
+        
+    
+    
+
+    
+    &nbsp; &middot; &nbsp;
+    
+        
+            <a class="reference internal" href="../blog/category/manual.html"><i class="fas fa-tag fa-sm"></i>
+                Manual</a> 
+            
+        
+    
+    
+</p>
+
+          
+
+          <section id="ablog-configuration-options">
+<span id="config"></span><h1>ABlog Configuration Options<a class="headerlink" href="#ablog-configuration-options" title="Link to this heading">¶</a></h1>
+<p>This post describes ABlog configuration options that go in <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/configuration.html#build-config" title="(in Sphinx v8.1.0)"><span class="xref std std-ref">Sphinx build configuration file</span></a>.</p>
+<section id="general-options">
+<h2>General options<a class="headerlink" href="#general-options" title="Link to this heading">¶</a></h2>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-blog_path">
+<span class="sig-name descname"><span class="pre">blog_path</span></span><a class="headerlink" href="#confval-blog_path" title="Link to this definition">¶</a></dt>
+<dd><p>A path relative to the configuration directory for blog archive pages.
+Default is <code class="docutils literal notranslate"><span class="pre">'blog'</span></code>.</p>
+</dd></dl>
+
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-blog_title">
+<span class="sig-name descname"><span class="pre">blog_title</span></span><a class="headerlink" href="#confval-blog_title" title="Link to this definition">¶</a></dt>
+<dd><p>The “title” for the blog, used in acthive pages.  Default is <code class="docutils literal notranslate"><span class="pre">'Blog'</span></code>.</p>
+</dd></dl>
+
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-blog_baseurl">
+<span class="sig-name descname"><span class="pre">blog_baseurl</span></span><a class="headerlink" href="#confval-blog_baseurl" title="Link to this definition">¶</a></dt>
+<dd><p>Base URL for the website, required for generating feeds.</p>
+</dd></dl>
+
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-blog_archive_titles">
+<span class="sig-name descname"><span class="pre">blog_archive_titles</span></span><a class="headerlink" href="#confval-blog_archive_titles" title="Link to this definition">¶</a></dt>
+<dd><p>Choose to archive only post titles in collection pages, default is <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+</dd></dl>
+
+</section>
+<section id="authors-languages-locations">
+<h2>Authors, languages, &amp; locations<a class="headerlink" href="#authors-languages-locations" title="Link to this heading">¶</a></h2>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-blog_authors">
+<span class="sig-name descname"><span class="pre">blog_authors</span></span><a class="headerlink" href="#confval-blog_authors" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary of author names mapping to author full display names and links.
+Dictionary keys are what should be used in <code class="docutils literal notranslate"><span class="pre">post</span></code> directive to refer to the author.
+Default is <code class="docutils literal notranslate"><span class="pre">{}</span></code>.
+Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">blog_authors</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Ahmet&#39;</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Ahmet Bakan&#39;</span><span class="p">,</span> <span class="s1">&#39;http://ahmetbakan.com&#39;</span><span class="p">),</span>
+    <span class="s1">&#39;Durden&#39;</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;Tyler Durden&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;https://en.wikipedia.org/wiki/Tyler_Durden&#39;</span><span class="p">),</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-blog_languages">
+<span class="sig-name descname"><span class="pre">blog_languages</span></span><a class="headerlink" href="#confval-blog_languages" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary of language code names mapping to full display names and links of these languages.
+Similar to <a class="reference internal" href="#confval-blog_authors"><code class="xref std std-confval docutils literal notranslate"><span class="pre">blog_authors</span></code></a>, dictionary keys should be used in <code class="docutils literal notranslate"><span class="pre">post</span></code> directive to refer to the locations.
+Default is <code class="docutils literal notranslate"><span class="pre">{}</span></code>.
+Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">blog_languages</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;en&#39;</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;English&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-blog_locations">
+<span class="sig-name descname"><span class="pre">blog_locations</span></span><a class="headerlink" href="#confval-blog_locations" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary of location names mapping to full display names and links of these locations.
+Similar to <a class="reference internal" href="#confval-blog_authors"><code class="xref std std-confval docutils literal notranslate"><span class="pre">blog_authors</span></code></a>, dictionary keys should be used in <code class="docutils literal notranslate"><span class="pre">post</span></code> directive to refer to the locations.
+Default is <code class="docutils literal notranslate"><span class="pre">{}</span></code>.</p>
+</dd></dl>
+
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-blog_default_author">
+<span class="sig-name descname"><span class="pre">blog_default_author</span></span><a class="headerlink" href="#confval-blog_default_author" title="Link to this definition">¶</a></dt>
+<dd><p>Name of the default author defined in <a class="reference internal" href="#confval-blog_authors"><code class="xref std std-confval docutils literal notranslate"><span class="pre">blog_authors</span></code></a>.
+Default is <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+</dd></dl>
+
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-blog_default_language">
+<span class="sig-name descname"><span class="pre">blog_default_language</span></span><a class="headerlink" href="#confval-blog_default_language" title="Link to this definition">¶</a></dt>
+<dd><p>Code name of the default language defined in <a class="reference internal" href="#confval-blog_languages"><code class="xref std std-confval docutils literal notranslate"><span class="pre">blog_languages</span></code></a>.
+Default is <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+</dd></dl>
+
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-blog_default_location">
+<span class="sig-name descname"><span class="pre">blog_default_location</span></span><a class="headerlink" href="#confval-blog_default_location" title="Link to this definition">¶</a></dt>
+<dd><p>Name of the default location defined in <a class="reference internal" href="#confval-blog_locations"><code class="xref std std-confval docutils literal notranslate"><span class="pre">blog_locations</span></code></a>.
+Default is <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+</dd></dl>
+
+<div class="note update admonition">
+<p class="admonition-title">Updated on 15 September 2014</p>
+<p>Added <a class="reference internal" href="#confval-blog_languages"><code class="xref std std-confval docutils literal notranslate"><span class="pre">blog_languages</span></code></a> and <a class="reference internal" href="#confval-blog_default_language"><code class="xref std std-confval docutils literal notranslate"><span class="pre">blog_default_language</span></code></a> configuration variables.</p>
+</div>
+</section>
+<section id="post-related">
+<h2>Post related<a class="headerlink" href="#post-related" title="Link to this heading">¶</a></h2>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-post_date_format">
+<span class="sig-name descname"><span class="pre">post_date_format</span></span><a class="headerlink" href="#confval-post_date_format" title="Link to this definition">¶</a></dt>
+<dd><p>Date display format (default is <code class="docutils literal notranslate"><span class="pre">'%b</span> <span class="pre">%d,</span> <span class="pre">%Y'</span></code>) for published posts that goes as input to <a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.date.strftime" title="(in Python v3.12)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">datetime.date.strftime()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-post_date_format_short">
+<span class="sig-name descname"><span class="pre">post_date_format_short</span></span><a class="headerlink" href="#confval-post_date_format_short" title="Link to this definition">¶</a></dt>
+<dd><p>Date display format in recent posts (default is <code class="docutils literal notranslate"><span class="pre">'%d</span> <span class="pre">%B'</span></code>) for published posts that goes as input to <a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.date.strftime" title="(in Python v3.12)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">datetime.date.strftime()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-post_auto_excerpt">
+<span class="sig-name descname"><span class="pre">post_auto_excerpt</span></span><a class="headerlink" href="#confval-post_auto_excerpt" title="Link to this definition">¶</a></dt>
+<dd><p>Number of paragraphs (default is <code class="docutils literal notranslate"><span class="pre">1</span></code>) that will be displayed as an excerpt from the post.
+Setting this <code class="docutils literal notranslate"><span class="pre">0</span></code> will result in displaying no post excerpt in archive pages.
+This option can be set on a per post basis using <a class="reference internal" href="posting-and-listing.html#directive-post" title="post directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">post</span></code></a> directive option <code class="docutils literal notranslate"><span class="pre">excerpt</span></code>.</p>
+<p>See <a class="reference internal" href="post-excerpts-and-images.html#post-excerpts-and-images"><span class="std std-ref">Post Excerpts and Images</span></a> for a more detailed discussion.</p>
+</dd></dl>
+
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-post_auto_image">
+<span class="sig-name descname"><span class="pre">post_auto_image</span></span><a class="headerlink" href="#confval-post_auto_image" title="Link to this definition">¶</a></dt>
+<dd><p>Index of the image that will be displayed in the excerpt of the post.
+Default is <code class="docutils literal notranslate"><span class="pre">0</span></code>, meaning no image.
+Setting this to <code class="docutils literal notranslate"><span class="pre">1</span></code> will include the first image, when available, to the excerpt.
+This option can be set on a per post basis using <a class="reference internal" href="posting-and-listing.html#directive-post" title="post directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">post</span></code></a> directive option <code class="docutils literal notranslate"><span class="pre">image</span></code>.</p>
+</dd></dl>
+
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-post_redirect_refresh">
+<span class="sig-name descname"><span class="pre">post_redirect_refresh</span></span><a class="headerlink" href="#confval-post_redirect_refresh" title="Link to this definition">¶</a></dt>
+<dd><p>Number of seconds (default is <code class="docutils literal notranslate"><span class="pre">5</span></code>) that a redirect page waits before refreshing the page to redirect to the post.</p>
+</dd></dl>
+
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-post_always_section">
+<span class="sig-name descname"><span class="pre">post_always_section</span></span><a class="headerlink" href="#confval-post_always_section" title="Link to this definition">¶</a></dt>
+<dd><p>When <code class="docutils literal notranslate"><span class="pre">True</span></code>, post title and excerpt is always taken from the section that contains the <a class="reference internal" href="posting-and-listing.html#directive-post" title="post directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">post</span></code></a> directive, instead of the document.
+This is the behavior when <a class="reference internal" href="posting-and-listing.html#directive-post" title="post directive"><code class="xref rst rst-dir docutils literal notranslate"><span class="pre">post</span></code></a> is used multiple times in a document.
+Default is <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+</dd></dl>
+
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-post_show_prev_next">
+<span class="sig-name descname"><span class="pre">post_show_prev_next</span></span><a class="headerlink" href="#confval-post_show_prev_next" title="Link to this definition">¶</a></dt>
+<dd><p>When <code class="docutils literal notranslate"><span class="pre">True</span></code>, links to the previous and next posts will be rendered at the bottom of the page.
+Default is <code class="docutils literal notranslate"><span class="pre">True</span></code></p>
+</dd></dl>
+
+</section>
+<section id="blog-feeds">
+<h2>Blog feeds<a class="headerlink" href="#blog-feeds" title="Link to this heading">¶</a></h2>
+<p>Turn feeds on by setting <a class="reference internal" href="#confval-blog_baseurl"><code class="xref std std-confval docutils literal notranslate"><span class="pre">blog_baseurl</span></code></a> configuration variable.</p>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-blog_feed_archives">
+<span class="sig-name descname"><span class="pre">blog_feed_archives</span></span><a class="headerlink" href="#confval-blog_feed_archives" title="Link to this definition">¶</a></dt>
+<dd><p>Choose to create feeds per author, location, tag, category, and year, default is <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+</dd></dl>
+
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-blog_feed_fulltext">
+<span class="sig-name descname"><span class="pre">blog_feed_fulltext</span></span><a class="headerlink" href="#confval-blog_feed_fulltext" title="Link to this definition">¶</a></dt>
+<dd><p>Choose to display full text in blog feeds, default is <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+</dd></dl>
+
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-blog_feed_subtitle">
+<span class="sig-name descname"><span class="pre">blog_feed_subtitle</span></span><a class="headerlink" href="#confval-blog_feed_subtitle" title="Link to this definition">¶</a></dt>
+<dd><p>Blog feed subtitle, default is <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+</dd></dl>
+
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-blog_feed_titles">
+<span class="sig-name descname"><span class="pre">blog_feed_titles</span></span><a class="headerlink" href="#confval-blog_feed_titles" title="Link to this definition">¶</a></dt>
+<dd><p>Choose to feed only post titles, default is <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+</dd></dl>
+
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-blog_feed_templates">
+<span class="sig-name descname"><span class="pre">blog_feed_templates</span></span><a class="headerlink" href="#confval-blog_feed_templates" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary of feed filename roots mapping to nested dictionaries of feed entry
+elements, <code class="docutils literal notranslate"><span class="pre">title</span></code>, <code class="docutils literal notranslate"><span class="pre">summary</span></code>, and/or <code class="docutils literal notranslate"><span class="pre">content</span></code>, and a <a class="reference external" href="https://jinja.palletsprojects.com/">Jinja2</a> template which will be
+used to render the value used for that element in that feed.  Templates are rendered
+with the the following context:
+- <code class="docutils literal notranslate"><span class="pre">feed_length</span></code>
+- <code class="docutils literal notranslate"><span class="pre">feed_fulltext</span></code>
+- <code class="docutils literal notranslate"><span class="pre">feed_posts</span></code>
+- <code class="docutils literal notranslate"><span class="pre">pagename</span></code>
+- <code class="docutils literal notranslate"><span class="pre">feed_title</span></code>
+- <code class="docutils literal notranslate"><span class="pre">feed_url</span></code>
+- <code class="docutils literal notranslate"><span class="pre">feed</span></code>
+- <code class="docutils literal notranslate"><span class="pre">post</span></code>
+- <code class="docutils literal notranslate"><span class="pre">post_url</span></code>
+- <code class="docutils literal notranslate"><span class="pre">content</span></code>
+- <code class="docutils literal notranslate"><span class="pre">feed_entry</span></code>
+- <code class="docutils literal notranslate"><span class="pre">title</span></code>
+- <code class="docutils literal notranslate"><span class="pre">summary</span></code>
+- <code class="docutils literal notranslate"><span class="pre">blog</span></code>
+- <code class="docutils literal notranslate"><span class="pre">url</span></code>
+- <code class="docutils literal notranslate"><span class="pre">app</span></code>
+Default is: <code class="docutils literal notranslate"><span class="pre">{&quot;atom&quot;:</span> <span class="pre">{}}</span></code>
+Example to add an additional feed for posting to social media:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">blog_feed_templates</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="c1"># Use defaults, no templates</span>
+      <span class="s2">&quot;atom&quot;</span><span class="p">:</span> <span class="p">{},</span>
+      <span class="c1"># Create content text suitable posting to social media</span>
+      <span class="s2">&quot;social&quot;</span><span class="p">:</span> <span class="p">{</span>
+         <span class="c1"># Format tags as hashtags and append to the content</span>
+         <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="s2">&quot;{{ title }}{</span><span class="si">% f</span><span class="s2">or tag in post.tags %}&quot;</span>
+         <span class="s2">&quot; #{{ tag.name|trim()|replace(&#39; &#39;, &#39;&#39;) }}&quot;</span>
+         <span class="s2">&quot;{</span><span class="si">% e</span><span class="s2">ndfor %}&quot;</span><span class="p">,</span>
+      <span class="p">},</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-blog_feed_length">
+<span class="sig-name descname"><span class="pre">blog_feed_length</span></span><a class="headerlink" href="#confval-blog_feed_length" title="Link to this definition">¶</a></dt>
+<dd><p>Specify number of recent posts to include in feeds, default is <code class="docutils literal notranslate"><span class="pre">None</span></code> for all posts.</p>
+</dd></dl>
+
+<div class="note update admonition">
+<p class="admonition-title">Updated on 24 August 2014</p>
+<p>Added <a class="reference internal" href="#confval-blog_feed_archives"><code class="xref std std-confval docutils literal notranslate"><span class="pre">blog_feed_archives</span></code></a>, <a class="reference internal" href="#confval-blog_feed_fulltext"><code class="xref std std-confval docutils literal notranslate"><span class="pre">blog_feed_fulltext</span></code></a>, <a class="reference internal" href="#confval-blog_feed_subtitle"><code class="xref std std-confval docutils literal notranslate"><span class="pre">blog_feed_subtitle</span></code></a>, and <a class="reference internal" href="#confval-post_always_section"><code class="xref std std-confval docutils literal notranslate"><span class="pre">post_always_section</span></code></a> options.</p>
+</div>
+<div class="note update admonition">
+<p class="admonition-title">Updated on 27 November 2014</p>
+<p>Added <a class="reference internal" href="#confval-blog_feed_titles"><code class="xref std std-confval docutils literal notranslate"><span class="pre">blog_feed_titles</span></code></a>, <a class="reference internal" href="#confval-blog_feed_length"><code class="xref std std-confval docutils literal notranslate"><span class="pre">blog_feed_length</span></code></a>, and <a class="reference internal" href="#confval-blog_archive_titles"><code class="xref std std-confval docutils literal notranslate"><span class="pre">blog_archive_titles</span></code></a> options.</p>
+</div>
+<div class="note update admonition">
+<p class="admonition-title">Updated on 20 March 2021</p>
+<p>Added <a class="reference internal" href="#confval-blog_feed_templates"><code class="xref std std-confval docutils literal notranslate"><span class="pre">blog_feed_templates</span></code></a> option.</p>
+</div>
+</section>
+<section id="font-awesome">
+<span id="id1"></span><h2>Font awesome<a class="headerlink" href="#font-awesome" title="Link to this heading">¶</a></h2>
+<p>ABlog templates will use of <a class="reference external" href="https://fontawesome.com/">Font Awesome</a> icons if one of the following is set:</p>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-fontawesome_link_cdn">
+<span class="sig-name descname"><span class="pre">fontawesome_link_cdn</span></span><a class="headerlink" href="#confval-fontawesome_link_cdn" title="Link to this definition">¶</a></dt>
+<dd><p>URL to <a class="reference external" href="https://fontawesome.com/">Font Awesome</a> <code class="file docutils literal notranslate"><span class="pre">.css</span></code> hosted at <a class="reference external" href="https://www.bootstrapcdn.com/fontawesome/">Bootstrap CDN</a> or anywhere else.
+Default: <code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd></dl>
+
+<div class="note update admonition">
+<p class="admonition-title">Updated on 29 July 2015</p>
+<p><a class="reference internal" href="#confval-fontawesome_link_cdn"><code class="xref std std-confval docutils literal notranslate"><span class="pre">fontawesome_link_cdn</span></code></a> was a <em>boolean</em> option, and now became a <em>string</em> to enable using desired version of <a class="reference external" href="https://fontawesome.com/">Font Awesome</a>.
+To get the old behavior, use <code class="docutils literal notranslate"><span class="pre">‘https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css'</span></code>.</p>
+</div>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-fontawesome_included">
+<span class="sig-name descname"><span class="pre">fontawesome_included</span></span><a class="headerlink" href="#confval-fontawesome_included" title="Link to this definition">¶</a></dt>
+<dd><p><a class="reference external" href="http://sphinx-doc.org/">Sphinx</a> theme already links to <a class="reference external" href="https://fontawesome.com/">Font Awesome</a>.
+Default: <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd></dl>
+
+<p>Alternatively, you can provide the path to <a class="reference external" href="https://fontawesome.com/">Font Awesome</a> <code class="file docutils literal notranslate"><span class="pre">.css</span></code> with the following configuration option:</p>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-fontawesome_css_file">
+<span class="sig-name descname"><span class="pre">fontawesome_css_file</span></span><a class="headerlink" href="#confval-fontawesome_css_file" title="Link to this definition">¶</a></dt>
+<dd><p>Path to <a class="reference external" href="https://fontawesome.com/">Font Awesome</a> <code class="file docutils literal notranslate"><span class="pre">.css</span></code> (default is <code class="docutils literal notranslate"><span class="pre">None</span></code>) that will be linked to in HTML output by ABlog.</p>
+</dd></dl>
+
+</section>
+<section id="disqus-integration">
+<span id="id3"></span><h2>Disqus integration<a class="headerlink" href="#disqus-integration" title="Link to this heading">¶</a></h2>
+<p>Of course one cannot think of a blog that doesn’t allow for visitors to comment.
+You can enable <a class="reference external" href="https://disqus.com/">Disqus</a> by setting <a class="reference internal" href="#confval-disqus_shortname"><code class="xref std std-confval docutils literal notranslate"><span class="pre">disqus_shortname</span></code></a> and <a class="reference internal" href="#confval-blog_baseurl"><code class="xref std std-confval docutils literal notranslate"><span class="pre">blog_baseurl</span></code></a> variables.
+The reason for requiring <a class="reference internal" href="#confval-blog_baseurl"><code class="xref std std-confval docutils literal notranslate"><span class="pre">blog_baseurl</span></code></a> to be specified as of v0.7.2 is to ensure that Disqus associates correct URLs with threads when you serve new posts locally for the first time.</p>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-disqus_shortname">
+<span class="sig-name descname"><span class="pre">disqus_shortname</span></span><a class="headerlink" href="#confval-disqus_shortname" title="Link to this definition">¶</a></dt>
+<dd><p><a class="reference external" href="https://disqus.com/">Disqus</a> short name for the website.</p>
+</dd></dl>
+
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-disqus_pages">
+<span class="sig-name descname"><span class="pre">disqus_pages</span></span><a class="headerlink" href="#confval-disqus_pages" title="Link to this definition">¶</a></dt>
+<dd><p>Choose to disqus pages that are not posts, default is <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+</dd></dl>
+
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-disqus_drafts">
+<span class="sig-name descname"><span class="pre">disqus_drafts</span></span><a class="headerlink" href="#confval-disqus_drafts" title="Link to this definition">¶</a></dt>
+<dd><p>Choose to disqus posts that are drafts (without a published date), default is <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+</dd></dl>
+
+</section>
+<section id="isso-integration">
+<h2>Isso integration<a class="headerlink" href="#isso-integration" title="Link to this heading">¶</a></h2>
+<p>An alternative to Disqus, is <a class="reference external" href="https://isso-comments.de/">Isso</a>.
+Integration is provided by <a class="reference external" href="https://sphinx-notes.github.io/isso/">sphinxnotes-isso</a> and the instructions there.</p>
+</section>
+<section id="blog-sidebars">
+<span id="sidebars"></span><h2>Blog sidebars<a class="headerlink" href="#blog-sidebars" title="Link to this heading">¶</a></h2>
+<p>Finally, there are seven sidebars you can include in your HTML output using <a class="reference external" href="http://sphinx-doc.org/">Sphinx</a> <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_sidebars" title="(in Sphinx v8.1.0)"><code class="xref std std-confval docutils literal notranslate"><span class="pre">html_sidebars</span></code></a> configuration option.
+Sidebars that you see on the left are listed below in the same order:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_sidebars</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="s1">&#39;**&#39;</span><span class="p">:</span> <span class="p">[</span><span class="o">...</span><span class="p">,</span>
+          <span class="s1">&#39;ablog/postcard.html&#39;</span><span class="p">,</span> <span class="s1">&#39;ablog/recentposts.html&#39;</span><span class="p">,</span>
+          <span class="s1">&#39;ablog/tagcloud.html&#39;</span><span class="p">,</span> <span class="s1">&#39;ablog/categories.html&#39;</span><span class="p">,</span>
+          <span class="s1">&#39;ablog/archives.html&#39;</span><span class="p">,</span> <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><code class="file docutils literal notranslate"><span class="pre">postcard.html</span></code> provides information regarding the current post.
+<code class="file docutils literal notranslate"><span class="pre">recentposts.html</span></code> lists most recent five posts.
+Others provide a link to a archive pages generated for each tag, category, and year.
+In addition, there are <code class="docutils literal notranslate"><span class="pre">authors.html</span></code>, <code class="docutils literal notranslate"><span class="pre">languages.html</span></code>, and <code class="docutils literal notranslate"><span class="pre">locations.html</span></code> sidebars that link to author and location archive pages.</p>
+</section>
+<section id="command-options">
+<h2>Command Options<a class="headerlink" href="#command-options" title="Link to this heading">¶</a></h2>
+<div class="note update admonition">
+<p class="admonition-title">Updated on 07 April 2015</p>
+<p>Added <a class="reference internal" href="ablog-commands.html#commands"><span class="std std-ref">ABlog Commands</span></a> options.</p>
+</div>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-ablog_website">
+<span class="sig-name descname"><span class="pre">ablog_website</span></span><a class="headerlink" href="#confval-ablog_website" title="Link to this definition">¶</a></dt>
+<dd><p>Directory name for build output files. Default is <code class="docutils literal notranslate"><span class="pre">_website</span></code>.</p>
+</dd></dl>
+
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-ablog_doctrees">
+<span class="sig-name descname"><span class="pre">ablog_doctrees</span></span><a class="headerlink" href="#confval-ablog_doctrees" title="Link to this definition">¶</a></dt>
+<dd><p>Directory name for build cache files. Default is <code class="docutils literal notranslate"><span class="pre">.doctrees</span></code>.</p>
+</dd></dl>
+
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-ablog_builder">
+<span class="sig-name descname"><span class="pre">ablog_builder</span></span><a class="headerlink" href="#confval-ablog_builder" title="Link to this definition">¶</a></dt>
+<dd><p>HTML builder, default is <code class="docutils literal notranslate"><span class="pre">dirhtml</span></code>. Build HTML pages, but with a single directory per document.
+Makes for prettier URLs (no .html) if served from a webserver. Alternative is <code class="docutils literal notranslate"><span class="pre">html</span></code> to build one HTML file per document.</p>
+</dd></dl>
+
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-github_pages">
+<span class="sig-name descname"><span class="pre">github_pages</span></span><a class="headerlink" href="#confval-github_pages" title="Link to this definition">¶</a></dt>
+<dd><p>GitHub user name used by <code class="docutils literal notranslate"><span class="pre">ablog</span> <span class="pre">deploy</span></code> command.
+See <a class="reference internal" href="ablog-commands.html#deploy"><span class="std std-ref">Deploy to GitHub Pages</span></a> and <a class="reference internal" href="deploy-to-github-pages.html#deploy-to-github-pages"><span class="std std-ref">Deploy to GitHub Pages</span></a> for more information.</p>
+</dd></dl>
+
+</section>
+</section>
+
+           
+          <div class="section ablog__blog_comments">
+            
+            
+
+
+<div class="section ablog__prev-next">
+  <span class="ablog__prev">
+    
+    
+    <a href="posting-and-listing.html">
+      
+      <i class="fa fa-arrow-circle-left"></i>
+      
+      <span>Posting and Listing</span>
+    </a>
+    
+  </span>
+  <!-- <span class="ablog__spacer">&nbsp;</span> -->
+  <span class="ablog__next">
+    
+    
+    <a href="cross-referencing-blog-pages.html">
+      <span>Cross-referencing Blog Pages</span>
+      
+      <i class="fa fa-arrow-circle-right" ></i>
+      
+    </a>
+    
+  </span>
+</div>
+
+            
+            
+            
+           
+            <div class="section ablog__comments"> 
+              
+            </div>
+
+            
+          </div>
+          
+          
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2014-2022, ABlog Team
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">ABlog Configuration Options</a><ul>
+<li><a class="reference internal" href="#general-options">General options</a></li>
+<li><a class="reference internal" href="#authors-languages-locations">Authors, languages, &amp; locations</a></li>
+<li><a class="reference internal" href="#post-related">Post related</a></li>
+<li><a class="reference internal" href="#blog-feeds">Blog feeds</a></li>
+<li><a class="reference internal" href="#font-awesome">Font awesome</a></li>
+<li><a class="reference internal" href="#disqus-integration">Disqus integration</a></li>
+<li><a class="reference internal" href="#isso-integration">Isso integration</a></li>
+<li><a class="reference internal" href="#blog-sidebars">Blog sidebars</a></li>
+<li><a class="reference internal" href="#command-options">Command Options</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/furo.js?v=5fa4622c"></script>
+    <script crossorigin="anonymous" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../_static/marker.js?v=afb55134"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    </body>
+</html>

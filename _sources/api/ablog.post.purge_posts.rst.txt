@@ -1,0 +1,6 @@
+purge_posts
+===========
+
+.. currentmodule:: ablog.post
+
+.. autofunction:: purge_posts

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://ablog.readthedocs.io/</id>
+  <title>ABlog - Posts tagged api</title>
+  <updated>2024-09-07T09:57:22.746690+00:00</updated>
+  <link href="https://ablog.readthedocs.io/"/>
+  <link href="https://ablog.readthedocs.io/blog/tag/api/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.io/" version="0.1.dev1+g64071ef">ABlog</generator>
+  <entry>
+    <id>https://ablog.readthedocs.io/manual/api.html</id>
+    <title>ABlog API</title>
+    <updated>2018-02-17T00:00:00+00:00</updated>
+    <author>
+      <name>Nabil Freij</name>
+    </author>
+    <content type="html">ABlog API #api</content>
+    <link href="https://ablog.readthedocs.io/manual/api.html"/>
+    <summary>setup(app)</summary>
+    <category term="api" label="api"/>
+    <published>2018-02-17T00:00:00+00:00</published>
+  </entry>
+</feed>

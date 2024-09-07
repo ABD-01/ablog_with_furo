@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://ablog.readthedocs.io/</id>
+  <title>ABlog - Posts tagged posting</title>
+  <updated>2024-09-07T09:57:22.944819+00:00</updated>
+  <link href="https://ablog.readthedocs.io/"/>
+  <link href="https://ablog.readthedocs.io/blog/tag/posting/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.io/" version="0.1.dev1+g64071ef">ABlog</generator>
+  <entry>
+    <id>https://ablog.readthedocs.io/manual/notebook_support.html</id>
+    <title>Jupyter Notebook Posting</title>
+    <updated>2018-10-27T00:00:00+00:00</updated>
+    <author>
+      <name>Second Author</name>
+    </author>
+    <content type="html">Jupyter Notebook Posting #posting</content>
+    <link href="https://ablog.readthedocs.io/manual/notebook_support.html"/>
+    <summary>To add support for Notebooks to your Ablog instance, you need to configure your docs/conf.py (or whereever your conf.py is located.</summary>
+    <category term="posting" label="posting"/>
+    <published>2018-10-27T00:00:00+00:00</published>
+  </entry>
+</feed>

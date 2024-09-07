@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://ablog.readthedocs.io/</id>
+  <title>ABlog - Posts by Mehmet Gerçeker</title>
+  <updated>2024-09-07T09:57:20.981270+00:00</updated>
+  <link href="https://ablog.readthedocs.io/"/>
+  <link href="https://ablog.readthedocs.io/blog/author/mehmet-gerceker/social.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.io/" version="0.1.dev1+g64071ef">ABlog</generator>
+  <entry>
+    <id>https://ablog.readthedocs.io/release/ablog-v0.5-released.html</id>
+    <title>ABlog v0.5 released</title>
+    <updated>2015-03-25T00:00:00+00:00</updated>
+    <author>
+      <name>Mehmet Gerçeker</name>
+    </author>
+    <content type="html">ABlog v0.5 released</content>
+    <link href="https://ablog.readthedocs.io/release/ablog-v0.5-released.html"/>
+    <summary>ABlog v0.5 is released. This version comes with ablog-commands and
+a quick-start guide.</summary>
+    <published>2015-03-25T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://ablog.readthedocs.io/manual/ablog-quick-start.html</id>
+    <title>ABlog Quick Start</title>
+    <updated>2015-03-01T00:00:00+00:00</updated>
+    <author>
+      <name>Ahmet Bakan</name>
+    </author>
+    <content type="html">ABlog Quick Start #config #tips</content>
+    <link href="https://ablog.readthedocs.io/manual/ablog-quick-start.html"/>
+    <summary>This short walk through of blogging work flow assumes that you have already installed ABlog. If not, see installation guide.</summary>
+    <category term="config" label="config"/>
+    <category term="tips" label="tips"/>
+    <published>2015-03-01T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://ablog.readthedocs.io/manual/ablog-commands.html</id>
+    <title>ABlog Commands</title>
+    <updated>2015-04-07T00:00:00+00:00</updated>
+    <author>
+      <name>Mehmet Gerçeker</name>
+    </author>
+    <content type="html">ABlog Commands #config #commands</content>
+    <link href="https://ablog.readthedocs.io/manual/ablog-commands.html"/>
+    <summary>ablog commands are for streamlining blog operations, i.e. building, serving, and viewing blog pages, as well as starting a new blog:</summary>
+    <category term="commands" label="commands"/>
+    <category term="config" label="config"/>
+    <published>2015-03-01T00:00:00+00:00</published>
+  </entry>
+</feed>

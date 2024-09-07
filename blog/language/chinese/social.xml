@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://ablog.readthedocs.io/</id>
+  <title>ABlog - Posts in Chinese</title>
+  <updated>2024-09-07T09:57:21.515560+00:00</updated>
+  <link href="https://ablog.readthedocs.io/"/>
+  <link href="https://ablog.readthedocs.io/blog/language/chinese/social.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.io/" version="0.1.dev1+g64071ef">ABlog</generator>
+  <entry>
+    <id>https://ablog.readthedocs.io/manual/ablog-i18n.html</id>
+    <title>ABlog Internationalization</title>
+    <updated>2014-08-30T00:00:00+00:00</updated>
+    <author>
+      <name>Ahmet Bakan</name>
+    </author>
+    <content type="html">ABlog Internationalization #i18n</content>
+    <link href="https://ablog.readthedocs.io/manual/ablog-i18n.html"/>
+    <summary>ABlog automatically generates certain labels like blog-posts and blog-categories.
+If these labels appear in English on your blog although you specified another language, then this page is for you.</summary>
+    <category term="i18n" label="i18n"/>
+    <published>2014-08-30T00:00:00+00:00</published>
+  </entry>
+</feed>

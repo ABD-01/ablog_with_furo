@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://ablog.readthedocs.io/</id>
+  <title>ABlog - Posts from World</title>
+  <updated>2024-09-07T09:57:21.457886+00:00</updated>
+  <link href="https://ablog.readthedocs.io/"/>
+  <link href="https://ablog.readthedocs.io/blog/location/world/social.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.io/" version="0.1.dev1+g64071ef">ABlog</generator>
+  <entry>
+    <id>https://ablog.readthedocs.io/release/ablog-v0.11-released.html</id>
+    <title>ABlog v0.11 released</title>
+    <updated>2023-03-23T00:00:00+00:00</updated>
+    <author>
+      <name>Nabil Freij</name>
+    </author>
+    <content type="html">ABlog v0.11 released</content>
+    <link href="https://ablog.readthedocs.io/release/ablog-v0.11-released.html"/>
+    <summary>ABlog v0.11 is released with the main focus being to update and tweak the HTML templates allow themes to override the default templates.
+In addition, all ablog elements in the templates wrapped in ablog__* divs to allow custom CSS rules.</summary>
+    <published>2023-03-23T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://ablog.readthedocs.io/manual/markdown.html</id>
+    <title>Markdown Support</title>
+    <updated>2020-10-10T00:00:00+00:00</updated>
+    <author>
+      <name>Nabil Freij</name>
+    </author>
+    <content type="html">Markdown Support</content>
+    <link href="https://ablog.readthedocs.io/manual/markdown.html"/>
+    <summary>ABlog can support markdown pages using myst-parser.
+This page is a markdown file underneath.</summary>
+    <published>2020-10-10T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://ablog.readthedocs.io/release/ablog-v0.10-released.html</id>
+    <title>ABlog v0.10 released</title>
+    <updated>2019-11-17T00:00:00+00:00</updated>
+    <author>
+      <name>Nabil Freij</name>
+    </author>
+    <content type="html">ABlog v0.10 released</content>
+    <link href="https://ablog.readthedocs.io/release/ablog-v0.10-released.html"/>
+    <summary>ABlog v0.10 is released with the main focus being to support the latest version of Sphinx as well as Python 3 only support.</summary>
+    <published>2019-11-17T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://ablog.readthedocs.io/release/ablog-v0.9-released.html</id>
+    <title>ABlog v0.9 released</title>
+    <updated>2018-02-17T00:00:00+00:00</updated>
+    <author>
+      <name>Nabil Freij</name>
+    </author>
+    <content type="html">ABlog v0.9 released</content>
+    <link href="https://ablog.readthedocs.io/release/ablog-v0.9-released.html"/>
+    <summary>ABlog v0.9.0 is released with the main focus being to support the latest version of Sphinx.
+This also moves the main development from Abakan to SunPy.</summary>
+    <published>2018-02-17T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://ablog.readthedocs.io/manual/api.html</id>
+    <title>ABlog API</title>
+    <updated>2018-02-17T00:00:00+00:00</updated>
+    <author>
+      <name>Nabil Freij</name>
+    </author>
+    <content type="html">ABlog API #api</content>
+    <link href="https://ablog.readthedocs.io/manual/api.html"/>
+    <summary>setup(app)</summary>
+    <category term="api" label="api"/>
+    <published>2018-02-17T00:00:00+00:00</published>
+  </entry>
+</feed>

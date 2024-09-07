@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://ablog.readthedocs.io/</id>
+  <title>ABlog - Posted in 2020</title>
+  <updated>2024-09-07T09:57:22.315339+00:00</updated>
+  <link href="https://ablog.readthedocs.io/"/>
+  <link href="https://ablog.readthedocs.io/blog/2020/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.io/" version="0.1.dev1+g64071ef">ABlog</generator>
+  <entry>
+    <id>https://ablog.readthedocs.io/manual/markdown.html</id>
+    <title>Markdown Support</title>
+    <updated>2020-10-10T00:00:00+00:00</updated>
+    <author>
+      <name>Nabil Freij</name>
+    </author>
+    <content type="html">Markdown Support</content>
+    <link href="https://ablog.readthedocs.io/manual/markdown.html"/>
+    <summary>ABlog can support markdown pages using myst-parser.
+This page is a markdown file underneath.</summary>
+    <published>2020-10-10T00:00:00+00:00</published>
+  </entry>
+</feed>

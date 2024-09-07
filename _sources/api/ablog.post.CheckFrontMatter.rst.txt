@@ -1,0 +1,27 @@
+CheckFrontMatter
+================
+
+.. currentmodule:: ablog.post
+
+.. autoclass:: CheckFrontMatter
+   :show-inheritance:
+
+   .. rubric:: Attributes Summary
+
+   .. autosummary::
+
+      ~CheckFrontMatter.default_priority
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~CheckFrontMatter.apply
+
+   .. rubric:: Attributes Documentation
+
+   .. autoattribute:: default_priority
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: apply
