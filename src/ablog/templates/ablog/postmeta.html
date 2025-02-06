@@ -1,6 +1,8 @@
 <p class="ablog-post-metainfo">
     {% if ablog[pagename].date %} 
-    <i class="fas fa-calendar fa-sm"></i> {{ ablog[pagename].date.strftime("%B %d, %Y") }}
+    <a class="reference internal" href="{{ pathto(ablog.blog_path ~ '/' ~ ablog[pagename].date.strftime('%Y'))}}">
+        <i class="fas fa-calendar fa-sm"></i> {{ ablog[pagename].date.strftime("%B %d, %Y") }}
+    </a>
     {% endif %}
     <!-- {% if ablog[pagename].author %}by {{ ablog[pagename].author }}{% endif %} -->
 
