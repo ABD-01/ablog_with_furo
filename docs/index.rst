@@ -1,5 +1,5 @@
-ABlog for Sphinx
-================
+ABlog for Sphinx (in Furo Theme)
+================================
 
 ABlog is a Sphinx extension that converts any documentation or personal website project into a full-fledged blog with:
 

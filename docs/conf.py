@@ -24,7 +24,7 @@ extensions = [
 
 version = str(_parse(ablog.__version__))
 project = "ABlog"
-copyright = "2014-2022, ABlog Team"
+copyright = "\"2014-2022, ABlog Team\" and \"2024, Muhammed Abdullah\""
 master_doc = "index"
 source_suffix = {
     ".rst": "restructuredtext",
@@ -103,7 +103,7 @@ html_theme_options = {
     "light_css_variables" : {"color-brand-visited": "var(--color-brand-primary);"},
     "dark_css_variables" : {"color-brand-visited": "var(--color-brand-primary);"},
 }
-html_title = "ABlog for blogging with Sphinx"
+html_title = "ABlog for blogging with Furo Theme"
 intersphinx_mapping = {
     "python": ("https://docs.python.org/", None),
     "sphinx": ("https://www.sphinx-doc.org/en/master/", None),
