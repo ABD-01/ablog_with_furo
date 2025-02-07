@@ -1,0 +1,33 @@
+Collection
+==========
+
+.. currentmodule:: ablog.blog
+
+.. autoclass:: Collection
+   :show-inheritance:
+
+   .. rubric:: Attributes Summary
+
+   .. autosummary::
+
+      ~Collection.catalog
+      ~Collection.docname
+      ~Collection.path
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~Collection.add
+      ~Collection.relsize
+
+   .. rubric:: Attributes Documentation
+
+   .. autoattribute:: catalog
+   .. autoattribute:: docname
+   .. autoattribute:: path
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: add
+   .. automethod:: relsize

@@ -1,0 +1,6 @@
+setup
+=====
+
+.. currentmodule:: ablog
+
+.. autofunction:: setup

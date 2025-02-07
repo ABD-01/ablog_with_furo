@@ -1,0 +1,35 @@
+PostDirective
+=============
+
+.. currentmodule:: ablog.post
+
+.. autoclass:: PostDirective
+   :show-inheritance:
+
+   .. rubric:: Attributes Summary
+
+   .. autosummary::
+
+      ~PostDirective.final_argument_whitespace
+      ~PostDirective.has_content
+      ~PostDirective.option_spec
+      ~PostDirective.optional_arguments
+      ~PostDirective.required_arguments
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~PostDirective.run
+
+   .. rubric:: Attributes Documentation
+
+   .. autoattribute:: final_argument_whitespace
+   .. autoattribute:: has_content
+   .. autoattribute:: option_spec
+   .. autoattribute:: optional_arguments
+   .. autoattribute:: required_arguments
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: run

@@ -1,0 +1,6 @@
+ask_user
+========
+
+.. currentmodule:: ablog.start
+
+.. autofunction:: ask_user

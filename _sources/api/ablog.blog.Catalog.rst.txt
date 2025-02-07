@@ -1,0 +1,17 @@
+Catalog
+=======
+
+.. currentmodule:: ablog.blog
+
+.. autoclass:: Catalog
+   :show-inheritance:
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~Catalog.add
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: add

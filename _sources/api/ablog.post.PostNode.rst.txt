@@ -1,0 +1,7 @@
+PostNode
+========
+
+.. currentmodule:: ablog.post
+
+.. autoclass:: PostNode
+   :show-inheritance:

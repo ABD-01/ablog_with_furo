@@ -1,0 +1,6 @@
+process_posts
+=============
+
+.. currentmodule:: ablog.post
+
+.. autofunction:: process_posts

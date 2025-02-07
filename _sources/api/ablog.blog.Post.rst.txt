@@ -1,0 +1,29 @@
+Post
+====
+
+.. currentmodule:: ablog.blog
+
+.. autoclass:: Post
+   :show-inheritance:
+
+   .. rubric:: Attributes Summary
+
+   .. autosummary::
+
+      ~Post.next
+      ~Post.prev
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~Post.to_html
+
+   .. rubric:: Attributes Documentation
+
+   .. autoattribute:: next
+   .. autoattribute:: prev
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: to_html
